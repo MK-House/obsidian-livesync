@@ -227,6 +227,12 @@
               permissions: '0755'
               puid: '1000'
               pgid: '1000'
+          - name: "mkhouse-obsidian-livesync-etc"
+            device:
+              path: "/mkh/srv/mkhouse/obsidian-livesync-etc"
+              permissions: '0755'
+              puid: '1000'
+              pgid: '1000'
 
     - name: "Pull Docker Compose services"
       command: |
