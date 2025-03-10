@@ -208,8 +208,8 @@
       copy:
         dest: "{{ OBSIDIAN_LIVESYNC_PROJECT }}/.env"
         content: |
-          OBSIDIAN_LIVESYNC_USER={{ OBSIDIAN_LIVESYNC_USER }}
-          OBSIDIAN_LIVESYNC_PASS={{ OBSIDIAN_LIVESYNC_PASS }}
+          COUCHDB_USER={{ COUCHDB_USER }}
+          COUCHDB_PASSWORD={{ COUCHDB_PASSWORD }}
       when: |
         hostvars[inventory_hostname].CF_TUNNEL_TOKEN is defined
 
