@@ -74,7 +74,7 @@
 
     - name: "Copy Obsidian LiveSync project to remote nodes"
       synchronize:
-        src: "{{ ANSIBLE_PROJECT }}/_dropfolder/obsidian_livesync/"
+        src: "{{ ANSIBLE_PROJECT }}/_dropfolder/obsidian-livesync/"
         dest: "{{ OBSIDIAN_LIVESYNC_PROJECT }}"
         delete: true
         recursive: true
